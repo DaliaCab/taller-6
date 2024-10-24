@@ -1,0 +1,48 @@
+/* animación infinita arcoíris :D*/
+.rainbowBackground {
+    background: linear-gradient(45deg, red, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease-in-out infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .navButton {
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navButton:hover {
+    background-color: #3700b3;
+  }
+  
